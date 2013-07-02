@@ -10,6 +10,7 @@ gem 'jquery-rails', '2.0.2'
 gem 'high_voltage'
 gem 'twitter'
 gem 'omniauth-twitter'
+gem 'thin'
 
 group :assets do
   gem 'sass-rails',   '3.2.5'
@@ -20,8 +21,9 @@ end
 group :development, :test do
   gem 'rspec-rails'
   gem 'capybara', '1.1.4'
+  gem 'foreman'
 end
 
 group :production do
-  gem 'pg', '0.12.2'
+  gem 'pg'
 end
